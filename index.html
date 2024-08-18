@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile Hunting</title>
+    <!-- DaisyUI & Tailwind CSS Linking -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="my-font">
+    <header>
+      <h2 class="text-6xl m-10 text-center">Phone Hunting</h2>
+    </header>
+    <main>
+      <section class="m-10">
+        <div class="flex gap-1 justify-center">
+          <input
+            id="search-bar"
+            type="text"
+            placeholder="Search"
+            class="input input-bordered w-full max-w-xs"
+          />
+          <div>
+            <button
+              onclick="searchHandler()"
+              class="btn bg-[#0D6EFD] w-40 text-white"
+            >
+              Search
+            </button>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div
+          id="phone-container"
+          class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"
+        ></div>
+      </section>
+      <section class="">
+        <div id="show-all-button" class="text-center m-10 hidden">
+          <button class="btn bg-[#0D6EFD]">Load More</button>
+        </div>
+      </section>
+    </main>
+    <script src="scrpt.js"></script>
+  </body>
+</html>
